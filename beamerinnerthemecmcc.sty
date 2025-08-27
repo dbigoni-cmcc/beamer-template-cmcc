@@ -7,12 +7,12 @@
 % Backgrounds
 \setbeamertemplate{background}{
   \ifnum\thepage=1\relax
-    \includegraphics[width=\paperwidth]{Modello_CMCC_slide_Layout_Cover.pdf};
+    \includegraphics[width=\paperwidth]{resources/Modello_CMCC_slide_Layout_cover.pdf};
   \else
     \ifnum\thepage=\ztotpages-1
       ~
     \else
-      \includegraphics[width=\paperwidth]{Modello_CMCC_slide_Layout_header.png};
+      \includegraphics[width=\paperwidth]{resources/Modello_CMCC_slide_Layout_header.png};
     \fi
   \fi
 }
@@ -37,7 +37,7 @@
 }
 
 % End page
-\AtEndDocument{\includepdf[pages=-]{Modello_CMCC_slide_Layout_last.pdf}}
+\AtEndDocument{\includepdf[pages=-]{resources/Modello_CMCC_slide_Layout_last.pdf}}
 
 % Bullets as squares
 \setbeamertemplate{items}[square]
