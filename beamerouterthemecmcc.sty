@@ -1,0 +1,26 @@
+\mode<presentation>
+
+% Subtitle cursive
+\setbeamerfont{framesubtitle}{size=\small, shape=\itshape}
+
+% Frame title
+\defbeamertemplate*{frametitle}{cmcc}[1][]
+{
+  \begin{beamercolorbox}[wd=\paperwidth,ht=3.3ex,leftskip=2ex]{frametitle}
+    \color{white}\insertframetitle
+  \end{beamercolorbox}
+}
+
+% Changing margins
+\newenvironment{changemargin}[2]{%
+	\begin{list}{}{%
+			\setlength{\topsep}{0pt}%
+			\setlength{\leftmargin}{#1}%
+			\setlength{\rightmargin}{#2}%
+			\setlength{\listparindent}{\parindent}%
+			\setlength{\itemindent}{\parindent}%
+			\setlength{\parsep}{\parskip}%
+		}%
+		\item[]}{\end{list}}
+
+\mode<all>
