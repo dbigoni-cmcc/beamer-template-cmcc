@@ -3,21 +3,21 @@
 % Frame title
 \defbeamertemplate*{frametitle}{cmcc}[1][]
 {
-  \begin{beamercolorbox}[wd=\paperwidth,ht=3.3ex,leftskip=2ex]{frametitle}
-    \color{white}\insertframetitle
+  \begin{beamercolorbox}[wd=\paperwidth,ht=4.5ex,leftskip=2ex]{frametitle}
+    \vbox to4.5ex{\vfil\hbox{\color{white}\large\bfseries\insertframetitle}\vfil}
   \end{beamercolorbox}
 }
 
 % Changing margins
 \newenvironment{changemargin}[2]{%
-	\begin{list}{}{%
-			\setlength{\topsep}{0pt}%
-			\setlength{\leftmargin}{#1}%
-			\setlength{\rightmargin}{#2}%
-			\setlength{\listparindent}{\parindent}%
-			\setlength{\itemindent}{\parindent}%
-			\setlength{\parsep}{\parskip}%
-		}%
-		\item[]}{\end{list}}
+  \begin{list}{}{%
+      \setlength{\topsep}{0pt}%
+      \setlength{\leftmargin}{#1}%
+      \setlength{\rightmargin}{#2}%
+      \setlength{\listparindent}{\parindent}%
+      \setlength{\itemindent}{\parindent}%
+      \setlength{\parsep}{\parskip}%
+    }%
+  \item[]}{\end{list}}
 
 \mode<all>

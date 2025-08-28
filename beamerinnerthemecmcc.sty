@@ -20,8 +20,8 @@
 % Title page
 \setbeamertemplate{title page}{
   \setcounter{framenumber}{0}
-  \begin{textblock*}{9cm}[0,1](2.5cm, 3cm)
-    \begin{beamercolorbox}[wd=8cm]{title page header}
+  \begin{textblock*}{12cm}[0,1](2.0cm, 3cm)
+    \begin{beamercolorbox}{title page header}
       \usebeamerfont{title}\usebeamercolor{title}\inserttitle%
     \end{beamercolorbox}%
     \vspace{1em}
@@ -39,6 +39,10 @@
 % End page
 \AtEndDocument{\includepdf[pages=-]{resources/Modello_CMCC_slide_Layout_last.pdf}}
 
+% Font
+\setbeamerfont{normal text}{size=\small}
+\AtBeginDocument{\usebeamerfont{normal text}}
+
 % Bullets as squares
 \setbeamertemplate{items}[square]
 \setbeamertemplate{sections/subsections in toc}[square]
@@ -55,7 +59,7 @@
 
 \setbeamertemplate{enumerate items}[default]
 
-\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{section in toc}{\inserttocsection}
 
 \setbeamertemplate{bibliography item}[text]
 
